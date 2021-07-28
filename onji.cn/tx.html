@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>映画の图床 - 腾讯全球CDN聚合图床</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="聚合图床,阿里图床,搜狗图床,京东图床,头条图床,腾讯图床,搜狐图床,网易图床,免费图片外链,API图床,图片外链,聚合图床">
+    <meta name="description" content="简洁图床,一个干净!快速!稳定的图床!全球CDN加速!聚合多家大厂图床,不会保存您的数据,让图床储存变得更安全,更简单.">
+    <meta name="description" content="聚合图床 - 免费全球CDN图床 阿里图床 搜狗图床 京东图床 头条图床 腾讯图床 搜狐图床 网易图床 葫芦侠图床 58图床">
+    <link rel="stylesheet" type="text/css" href="static/css/fileinput.min.css">
+    <link rel="stylesheet" type="text/css" href="static/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="static/newicon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="static/uploadicon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="static/css/mdui.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/app.css">
+
+    <style>
+      .btn-file {
+          background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+          background-size: 400%;
+          color: #fff;
+      }
+
+      .btn-file:hover {
+          animation: sun 8s infinite;
+      }
+
+      @keyframes sun {
+          100%{
+              background-position: -400% 0;
+          }
+      }
+    </style>
+
+
+
+
+
+</head>
+
+<body class="mdui-theme-accent-indigo mdui-appbar-with-toolbar ">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-black">
+      <span mdui-drawer="{target: '#menu'}" class="mdui-btn mdui-btn-icon open-menu"><i class="mdui-icon material-icons">&#xe5d2;</i></span>
+      <a href="/" class="mdui-typo-headline"><img style="width:160px;" src="https://p3.douyinpic.com/obj/toutiao.cg.fiji/c13rltjicdjbhc213qqg.png"></a>
+      <div class="mdui-toolbar-spacer"></div>
+    </div>
+  </div>
+
+  <div id="menu" class="mdui-drawer mdui-drawer-close">
+    <div class="mdui-list" mdui-collapse="{accordion: true}">
+      <a class="mdui-list-item mdui-ripple" href="tencent.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-dispatch mdui-text-color-blue"></i>
+        <div class="mdui-list-item-content">腾讯</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="jd.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-jingdong mdui-text-color-red"></i>
+        <div class="mdui-list-item-content">京东</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="qq.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-copy mdui-text-color-blue"></i>
+        <div class="mdui-list-item-content">QQ</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="ali.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-ali mdui-text-color-orange"></i>
+        <div class="mdui-list-item-content">阿里</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="wangyi.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-wangyi mdui-text-color-red"></i>
+        <div class="mdui-list-item-content">网易</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="toutiao.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-toutiao mdui-text-color-red"></i>
+        <div class="mdui-list-item-content">头条</div>
+      </a>
+	  <a class="mdui-list-item mdui-ripple" href="douyin.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-vim mdui-text-color-black"></i>
+        <div class="mdui-list-item-content">抖音</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="meituan.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-juejin mdui-text-color-yellow"></i>
+        <div class="mdui-list-item-content">美团</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="baidu.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-baidu mdui-text-color-blue"></i>
+        <div class="mdui-list-item-content">百度</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="xc.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-auxly mdui-text-color-blue"></i>
+        <div class="mdui-list-item-content">携程</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="souhu.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-souhu mdui-text-color-orange"></i>
+        <div class="mdui-list-item-content">搜狐</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="ks.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-prnt mdui-text-color-orange"></i>
+        <div class="mdui-list-item-content">快手</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="360.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-qihu mdui-text-color-green"></i>
+        <div class="mdui-list-item-content">360</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="lenovo.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-icons-code mdui-text-color-orange"></i>
+        <div class="mdui-list-item-content">联想</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="weidian.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-flickr mdui-text-color-red"></i>
+        <div class="mdui-list-item-content">微店</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="suning.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-suning mdui-text-color-orange"></i>
+        <div class="mdui-list-item-content">苏宁</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="sina.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-weibo mdui-text-color-red"></i>
+        <div class="mdui-list-item-content">新浪</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple" href="yiche.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-ooxx mdui-text-color-blue"></i>
+        <div class="mdui-list-item-content">易车</div>
+      </a>
+
+      <a class="mdui-list-item mdui-ripple" href="about.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-icons-code mdui-text-color-red"></i>
+        <div class="mdui-list-item-content">关于</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple " href="notice.html">
+        <i class="mdui-list-item-icon mdui-icon material-icons">notifications</i>
+        <div class="mdui-list-item-content">公告</div>
+      </a>
+      <a class="mdui-list-item mdui-ripple " href="https://disk.onji.cn" target="_blank">
+        <i class="mdui-list-item-icon mdui-icon material-icons">&#xe40b;</i>
+        <div class="mdui-list-item-content">免费云盘</div>
+      </a>
+
+    </div>
+  </div>
+  <div class="alert alert-warning alert-dismissible" role="alert" id="gonggao" style="display: none; text-align: center;">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="gonggaoClose"><span aria-hidden="true">&times;</span></button>
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>警告：</strong> 网络并非法外之地！切勿传输违反相关国家法规及个人隐私的图片。本服务器记录上传者IP，请自行判断节点稳定性. <a href="notice.html">公告：2021.05.10</a></div>
+
+  <div class="mdui-container">
+    <main>
+      <div class="upload-container">
+        <div class="title">
+        <h1>Image Upload - 腾讯
+        <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-dispatch mdui-text-color-blue"></i>
+        </h1>
+          <h5>
+          全球CDN免费图床，点击左侧菜单可切换节点
+          </h5>
+          <p>存储于各大互联网公共接口，请遵循该厂条款！最大可上传 5120 KB的图片，单次同时可选择 20 张；<br>状态：<img src="https://inews.gtimg.com/newsapp_ls/0/13297686545/0.png" alt="image.png" title="可用" width="16" height="16"/>（显示绿勾即为正常）；全局支持[<span style="color: green;"> HTTPS </span>]；<span style="color: red;">CDN：腾讯云. </span>该节点图片优化，大图视觉无损压缩 - 50%+ ，小图可能微增</p>
+        </div>
+        <form action="" method="post" enctype="multipart/form-data">
+          <input id="image" style="display: none;" type="file" multiple="" name="image" accept="image/*">
+        </form>
+        <div class="success-info">
+          <div class="mdui-tab mdui-tab-scrollable" mdui-tab="">
+            <a href="#code-url" class="mdui-ripple mdui-tab-active">URL</a>
+            <a href="#code-bbcode" class="mdui-ripple">BBCode</a>
+            <a href="#code-html" class="mdui-ripple">HTML</a>
+            <a href="#code-html-with-link" class="mdui-ripple">HTML with link</a>
+            <a href="#code-markdown" class="mdui-ripple">Markdown</a>
+            <a href="#code-markdown-with-link" class="mdui-ripple">Markdown with link</a>
+          </div>
+          <div id="code-url">
+            <ul></ul>
+          </div>
+          <div id="code-html">
+            <ul></ul>
+          </div>
+          <div id="code-html-with-link">
+            <ul></ul>
+          </div>
+          <div id="code-bbcode">
+            <ul></ul>
+          </div>
+          <div id="code-markdown">
+            <ul></ul>
+          </div>
+          <div id="code-markdown-with-link">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <div class="mdui-fab-wrapper">
+    <button id="to-top" class="mdui-fab mdui-ripple mdui-fab-hide mdui-color-theme-accent">
+      <i class="mdui-icon material-icons">&#xe5d8;</i>
+    </button>
+  </div>
+  <div id="loading-container">
+    <div class="mask"></div>
+    <div class="loading">
+      <div class="mdui-spinner mdui-spinner-colorful"></div>
+    </div>
+  </div>
+    <div id="copyUp" style="display: none;">
+      <div class="mdui-progress">
+        <div class="mdui-progress-indeterminate"></div>
+      </div>
+    </div>
+<footer>
+    <div id="copyUp" style="display: none;">
+      <div class="mdui-progress">
+        <div class="mdui-progress-indeterminate"></div>
+      </div>
+    </div>
+    <div class="mdui-container" style="text-align: center">
+     Copyright &copy; 2020<span id="timeyear"></span> <a href="https://onji.cn/" target="_blank" style="color:#999;" title="野の映画">映画の图床</a> All Rights . <a href="about.html" style="color:#999;">声明/黑名单</a> .  <a href="https://kf.onji.cn/xv/web/static/chat/index.html?sign=37ef9b97d27350c32a4298ba18b4b737abce5b50ca9f0333a353cf2a9957f52cd3133bd61f9610def9e5b5d6134a0b7893ebe6f0" target="_blank" style="color:red;" title="联系客服">反馈·建议</a> | <a href="https://jq.qq.com/?_wv=1027&k=daRL0yhf" target="_blank" style="color:red;" title="点击链接加入群聊【映画の图床】">QQ群</a>
+    </div>
+</footer>
+</body>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/mdui.min.js"></script>
+  <script src="static/js/app.js"></script>
+  <script src="static/js/clipboard.min.js"></script>
+  <script src="static/js/fileinput.min.js"></script>
+  <script src="static/js/zh.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script>  
+    var ApiUpload = 'tencent';
+    var MykeySign = new Date().getTime();
+  </script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?00ba92eac9295cdfcdb2543d8e5045a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  <script src="static/js/copyUp.js"></script>
+  <script src="static/js/myUp.js"></script>
+  <script src="static/js/myFonction.js"></script>
+  <script src="static/js/init.js"></script>
+</html>
