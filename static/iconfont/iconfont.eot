@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIENG图床-一个干净快速稳定的免费外链图床库</title>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="keywords" content="KIENG图床,阿里图床,搜狗图床,网易图床,免费图片外链,API图床,图片外链,聚合图床"/>
+    <meta name="description" content="来自于KIENG博客维护,一个干净!快速!稳定的图床!全球CDN加速!聚合多家大厂图床,开放API接口.不会保存您的数据,让图床储存变得更安全,更简单."/>
+    <!-- QQCard BEGIN -->
+    <meta itemprop="name" content="KIENG图床,一个免费优秀的图床.">
+    <meta itemprop="image" content="https://puui.qpic.cn/fans_admin/0/3_362389459_1583478289033/0">
+    <meta name="description" itemprop="description" content="免费,稳定的图床">
+<!-- QQCard END -->
+    <meta name="description" content="来自于KIENG博客维护,一个干净!快速!稳定的图床!全球CDN加速!聚合多家大厂图床,开放API接口.不会保存您的数据,让图床储存变得更安全,更简单."/>
+    <link rel="stylesheet" type="text/css" href="/css/fileinput.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/static/newicon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/static/uploadicon/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/static/mdui/0.4.1/css/mdui.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    
+<style>
+	.btn-file {
+		background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+		background-size: 400%;
+		color: #fff;
+	}
+
+	.btn-file:hover {
+		animation: sun 8s infinite;
+	}
+
+	@keyframes sun {
+		100%{
+			background-position: -400% 0;
+		}
+	}
+</style>
+
+</head>
+<body class="mdui-theme-accent-indigo mdui-appbar-with-toolbar ">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-black">
+        <span mdui-drawer="{target: '#menu'}" class="mdui-btn mdui-btn-icon open-menu"><i
+            class="mdui-icon material-icons">&#xe5d2;</i></span>
+            <a href="/" class="mdui-typo-headline"><img style="width:145px;" src="https://puui.qpic.cn/fans_admin/0/3_362389459_1583478289033/0"></a>
+            <div class="mdui-toolbar-spacer"></div>
+
+            <a href="https://blog.kieng.cn" target="_blank" class="mdui-btn"><i class="mdui-icon material-icons">account_circle</i></a>
+
+        </div>
+    </div>
+
+    <div id="menu" class="mdui-drawer mdui-drawer-close">
+        <div class="mdui-list" mdui-collapse="{accordion: true}">
+                        <a class="mdui-list-item mdui-ripple" href="/jd.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-jingdong mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">JD图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/ali.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-ali mdui-text-color-orange"></i>
+                <div class="mdui-list-item-content">AL图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/sg.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-sougou mdui-text-color-blue"></i>
+                <div class="mdui-list-item-content">SG图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/c58.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-dispatch mdui-text-color-yellow"></i>
+                <div class="mdui-list-item-content">58图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/wy.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-wangyi mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">WY图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/tt.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-toutiao mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">TT图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/qq.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-dispatch mdui-text-color-blue"></i>
+                <div class="mdui-list-item-content">QQ图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/kefu.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-choice mdui-text-color-pink"></i>
+                <div class="mdui-list-item-content">KF图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/sh.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-souhu mdui-text-color-orange"></i>
+                <div class="mdui-list-item-content">SH图床</div>
+            </a>
+                        <a class="mdui-list-item mdui-ripple" href="/hl.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-sm mdui-text-color-blue"></i>
+                <div class="mdui-list-item-content">HL图床</div>
+            </a>
+            
+            <a class="mdui-list-item mdui-ripple " href="/about.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-icons-code mdui-text-color-red"></i>
+                <div class="mdui-list-item-content">说明/黑名单</div>
+            </a>
+            <a class="mdui-list-item mdui-ripple " href="/images.html">
+            	<i class="mdui-list-item-icon mdui-icon material-icons">&#xe40b;</i>
+            	<div class="mdui-list-item-content">图库</div>
+            </a>
+            <a class="mdui-list-item mdui-ripple " href="/notice.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons">notifications</i>
+                <div class="mdui-list-item-content">公告</div>
+            </a>
+        </div>
+    </div>
+    <div class="alert alert-warning alert-dismissible" role="alert" id="gonggao" style="display: none;">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="gonggaoClose"><span aria-hidden="true">&times;</span></button>
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <strong>警告</strong> 切勿传输违反国家法规的图片和个人隐私图片.本服务器记录上传者IP且为公开图床.有疑问请联系:<a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin@kieng.cn" target="_blank">admin@kieng.cn</a>    <a href="/notice.html" target="_blank">更多</a>  </div>
+    
+<div class="mdui-container">
+    <main>
+        <div class="upload-container">
+    <div class="title">
+        <h1>Image Upload - JD 
+            <i class="mdui-list-item-icon mdui-icon material-icons iconfont icon-jingdong mdui-text-color-red"></i>
+        </h1>
+
+        <p>最大可上传 5120 KB的图片，单次同时可选择 20 张。<span style="color: red;">*推荐:稳定性好</span></p>
+    </div>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input id="image" style="display: none;" type="file" multiple name="image" accept="image/*">
+    </form>
+    <div class="success-info">
+        <div class="mdui-tab mdui-tab-scrollable" mdui-tab>
+            <a href="#code-url" class="mdui-ripple mdui-tab-active">URL</a>
+            <a href="#code-html" class="mdui-ripple">HTML</a>
+            <a href="#code-bbcode" class="mdui-ripple">BBCode</a>
+            <a href="#code-markdown" class="mdui-ripple">Markdown</a>
+            <a href="#code-markdown-with-link" class="mdui-ripple">Markdown with link</a>
+        </div>
+        <div id="code-url">
+            <ul></ul>
+        </div>
+        <div id="code-html">
+            <ul></ul>
+        </div>
+        <div id="code-bbcode">
+            <ul></ul>
+        </div>
+        <div id="code-markdown">
+            <ul></ul>
+        </div>
+        <div id="code-markdown-with-link">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+    </main>
+</div>
+
+    
+    <div class="mdui-fab-wrapper">
+        <button id="to-top" class="mdui-fab mdui-ripple mdui-fab-hide mdui-color-theme-accent">
+            <i class="mdui-icon material-icons">&#xe5d8;</i>
+        </button>
+    </div>
+    <div id="loading-container">
+        <div class="mask"></div>
+        <div class="loading">
+            <div class="mdui-spinner mdui-spinner-colorful"></div>
+        </div>
+    </div>
+    <footer>
+       <div id="copyUp" style="display: none;">
+    <div class="mdui-progress">
+        <div class="mdui-progress-indeterminate"></div>
+    </div>
+</div>
+<div class="mdui-container">
+    Copyright &copy; 2020 <a href="https://blog.kieng.cn" style="color:#999;" title="KIENG博客">KIENG</a> All rights reserved. ❤️ 本网站图片托管总数:<span id="znumber"></span> | <a href="/about.html">声明/黑名单</a> | <a href="https://www.aliyun.com/minisite/goods?userCode=23laqvh5" target="_blank"><img src="https://jacdn.kieng.cn/images/server-aliyun.svg"></a> <a href="https://cloud.tencent.com/" target="_blank"><img src="https://jacdn.kieng.cn/images/cdn-tencent.svg"></a>
+</div>
+    </footer>
+</body>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/mdui.min.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/clipboard.min.js"></script>
+<script src="/static/js/fileinput.min.js"></script>
+<script src="/static/js/zh.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+
+<script>
+    var ApiUpload = 'jd';
+    var MykeySign = new Date().getTime();
+</script>
+<script src="/static/js/copyUp.js"></script>
+<script src="/static/js/myUp.js"></script>
+<script src="/static/js/myFonction.js"></script>
+<script src="/static/js/init.js"></script>
+<!--百度统计-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8948fbcc68dc282165999647dc109378";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- 同步测试 -->
+</html>
