@@ -1,3 +1,9 @@
+# 更新
+由于API加了鉴权，必须自己弄去
+
+https://image.kieng.cn/
+
+
 # KIENG-FigureBed
 image.kieng.cn 的仿站源码
 
